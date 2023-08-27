@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const BongobonduCorner = () => {
     return (
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col gap-8'>
             <div className='border-2 border-primary'>
                 <div className='bg-primary px-4 py-2 text-white'>
                     <h2>বঙ্গবন্ধু কর্নার</h2>

@@ -3,6 +3,7 @@ import About from '../About/About';
 import BongobonduCorner from '../BongobonduCorner/BongobonduCorner';
 import AllNoticeList from '../AllNoticeList/AllNoticeList';
 import Achievements from '../Achievements/Achievements';
+import Events from '../Events/Events';
 
 const HomeContent = () => {
     return (
@@ -15,8 +16,9 @@ const HomeContent = () => {
             </div>
 
             {/* Right side--------- */}
-            <div className='md:w-1/4 w-full'>
+            <div className='md:w-1/4 w-full flex flex-col gap-8'>
                 <BongobonduCorner />
+                <Events />
             </div>
         </div>
     );

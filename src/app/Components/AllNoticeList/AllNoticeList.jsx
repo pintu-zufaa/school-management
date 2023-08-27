@@ -21,7 +21,7 @@ const AllNoticeList = () => {
             {/* </div> */}
             <div className='py-5 px-3 flex flex-col gap-3 lg:gap-5'>
                 {
-                    [1, 2, 3, 4, 5, 6]?.map(item =>
+                    [1, 2, 3, 4, 5, 6, 7, 8, 9]?.map(item =>
                         <div key={item} className='flex justify-between gap-3 lg:gap-0 bg-gray-100 px-3 lg:px-5 py-3'>
                             <div className='flex gap-2 items-start text-primary'>
                                 <FaRegHandPointRight className='text-2xl' />
