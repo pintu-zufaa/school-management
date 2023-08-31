@@ -20,14 +20,14 @@ const NavBar = () => {
 
     const menuItems = <>
         <Link href='/'>Home</Link>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-auto' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>About</span>
                 <FaAngleDown />
             </MenuButton>
         } transition>
             <MenuItem>
-                <Link href=''>Menu</Link>
+                <Link href=''>menu</Link>
             </MenuItem>
             <MenuItem>
                 <Link href=''>Menu</Link>
@@ -36,8 +36,8 @@ const NavBar = () => {
                 <Link href=''>Menu</Link>
             </MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Governance</span>
                 <FaAngleDown />
             </MenuButton>
@@ -46,8 +46,8 @@ const NavBar = () => {
             <MenuItem>Copy</MenuItem>
             <MenuItem>Paste</MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Academic</span>
                 <FaAngleDown />
             </MenuButton>
@@ -56,8 +56,8 @@ const NavBar = () => {
             <MenuItem>Copy</MenuItem>
             <MenuItem>Paste</MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Notice</span>
                 <FaAngleDown />
             </MenuButton>
@@ -66,8 +66,8 @@ const NavBar = () => {
             <MenuItem>Copy</MenuItem>
             <MenuItem>Paste</MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Admission</span>
                 <FaAngleDown />
             </MenuButton>
@@ -76,8 +76,8 @@ const NavBar = () => {
             <MenuItem>Copy</MenuItem>
             <MenuItem>Paste</MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Result</span>
                 <FaAngleDown />
             </MenuButton>
@@ -86,8 +86,8 @@ const NavBar = () => {
             <MenuItem>Copy</MenuItem>
             <MenuItem>Paste</MenuItem>
         </Menu>
-        <Menu align='end' menuClassName='bg-natural' menuButton={
-            <MenuButton className='flex gap-3 items-center'>
+        <Menu align='end' menuClassName='bg-natural w-52 lg:w-full' menuButton={
+            <MenuButton className='flex gap-3 items-center w-full justify-between'>
                 <span>Service</span>
                 <FaAngleDown />
             </MenuButton>
@@ -117,9 +117,11 @@ const NavBar = () => {
                     direction='right'
                     enableOverlay={true}
                     style={{ minHeight: '100%' }}
-                    className='min-h-screen'
+                    className='min-h-screen min-w-[350px] overflow-y-scroll'
                 >
-                    <div>Hello World</div>
+                    <div className='p-5 bg-primary min-h-screen flex flex-col gap-10 py-10 text-xl text-white font-semibold'>
+                        {menuItems}
+                    </div>
                 </Drawer>
             </div>
         </div>
