@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import banner from '../../../../assets/Images/school.png'
+import banner from '../../../../assets/Images/schoolbanner.png'
 import name from '../../../../assets/Images/RajshahiCollegiateSchool.png'
 import Image from 'next/image';
 
